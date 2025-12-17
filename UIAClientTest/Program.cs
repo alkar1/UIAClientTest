@@ -61,11 +61,28 @@ namespace UIAClientTest
 
                 Console.WriteLine("Znaleziono pole edycji tekstu.");
 
-                // Wpisz tekst
-                string textToType = "Witaj œwiecie!\nTo jest test Microsoft UI Automation.\nDzia³a poprawnie! ??";
+                // Wpisz tekst - z aktualn¹ dat¹ i godzin¹
+                string textToType = $@"========================================
+   TEST UI AUTOMATION - SUKCES!
+========================================
+
+Data i czas: {DateTime.Now:yyyy-MM-dd HH:mm:ss}
+
+Ten tekst zosta³ wpisany automatycznie
+przez program UIAClientTest u¿ywaj¹c
+Microsoft UI Automation API.
+
+Technologie:
+- .NET 8.0
+- System.Windows.Automation
+- ValuePattern
+
+[STAThread] dzia³a poprawnie!
+========================================";
+
                 TypeTextInControl(editControl, textToType);
 
-                Console.WriteLine($"\nPomyœlnie wpisano tekst:\n\"{textToType}\"");
+                Console.WriteLine($"\nPomyœlnie wpisano tekst do Notatnika!");
                 
                 if (autoMode)
                 {
