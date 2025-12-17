@@ -7,6 +7,7 @@ namespace UIAClientTest
 {
     class Program
     {
+        [STAThread]  // WYMAGANE dla UI Automation!
         static void Main(string[] args)
         {
             // Sprawdü czy uruchomiono w trybie automatycznym

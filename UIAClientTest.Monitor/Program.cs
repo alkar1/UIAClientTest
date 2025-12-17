@@ -12,6 +12,7 @@ namespace UIAClientTest.Monitor
     /// </summary>
     class Program
     {
+        [STAThread]  // WYMAGANE dla UI Automation i Windows COM!
         static void Main(string[] args)
         {
             Console.WriteLine("=== UIAClientTest Monitor ===");
