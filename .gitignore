@@ -1,0 +1,30 @@
+# Ignoruj pliki binarne i build artifacts
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+
+# Ignoruj pliki NuGet
+packages/
+*.nupkg
+
+# Ignoruj pliki tymczasowe
+*.tmp
+*.temp
+*.log
+
+# Ignoruj pliki Visual Studio
+.vscode/
+*.swp
+*~
+
+# Ignoruj pliki systemu Windows
+Thumbs.db
+Desktop.ini
+
+# Zachowaj dokumentacjê i skrypty
+!*.md
+!*.bat
+!*.ps1
